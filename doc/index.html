@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>n8n Invoice Automation System</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; background: #f6f8fb; color: #1e2a3a; }
+    .hero {
+      background: linear-gradient(135deg, #102033, #234b6f 55%, #2e6f95);
+      color: white;
+      padding: 72px 24px 54px;
+      text-align: center;
+    }
+    .hero h1 { font-size: 48px; margin: 0 0 14px; }
+    .hero p { max-width: 900px; margin: 0 auto 26px; line-height: 1.6; font-size: 18px; color: #d7e5f2; }
+    .cta { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+    .btn {
+      display: inline-block; text-decoration: none; padding: 14px 22px; border-radius: 999px; font-weight: 700;
+    }
+    .btn-primary { background: #7bdcb5; color: #082a1d; }
+    .btn-secondary { background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.18); }
+    .container { max-width: 1180px; margin: 0 auto; padding: 32px 24px 64px; }
+    .section { background: white; border-radius: 24px; box-shadow: 0 14px 32px rgba(22,34,51,0.08); padding: 28px; margin-bottom: 26px; }
+    .section h2 { margin-top: 0; font-size: 30px; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+    .card { background: #f8fbff; border: 1px solid #e4edf7; border-radius: 18px; overflow: hidden; }
+    .card img { width: 100%; display: block; }
+    .card .copy { padding: 18px; }
+    .card h3 { margin: 0 0 10px; font-size: 24px; }
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 18px; }
+    .stat { background: #f8fbff; border: 1px solid #e4edf7; border-radius: 16px; padding: 18px; }
+    .stat strong { display: block; font-size: 26px; margin-bottom: 8px; color: #1f6f78; }
+    .list { padding-left: 18px; line-height: 1.7; }
+    @media (max-width: 900px) {
+      .grid, .stats { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 38px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>n8n Invoice Automation System</h1>
+    <p>A client-style business automation project built with n8n, Google Drive, Google Sheets, Bkper, and AppSheet to reduce manual invoice handling and create a structured review-friendly processing pipeline.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="https://www.loom.com/share/4aa80837ba3e4d74999465464b80fe47">Watch Loom Walkthrough</a>
+      <a class="btn btn-secondary" href="demo/invoice-automation-demo.mp4">Open Repo Demo Video</a>
+      <a class="btn btn-secondary" href="https://github.com/abubakarshahid16/n8n-invoice-automation-system">View Repository</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h2>Business Value</h2>
+      <div class="stats">
+        <div class="stat"><strong>Automation</strong>File intake, duplicate checks, extraction, routing, and tracking</div>
+        <div class="stat"><strong>AI Layer</strong>Structured invoice parsing with review indicators</div>
+        <div class="stat"><strong>Ops Visibility</strong>Google Sheets buffers plus AppSheet review flow</div>
+        <div class="stat"><strong>Client Style</strong>Real business workflow with human-in-the-loop design</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Workflow Screens</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="screenshots/workflow-overview.png" alt="Workflow overview">
+          <div class="copy">
+            <h3>System Overview</h3>
+            <p>High-level view of how invoice files move through storage, extraction, validation, bookkeeping support, and review operations.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="screenshots/bkper-flow.png" alt="Solution context">
+          <div class="copy">
+            <h3>Business Context</h3>
+            <p>The workflow sits between operations and bookkeeping, turning disconnected manual steps into a repeatable business process.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="screenshots/n8n-flow-1.jpg" alt="n8n flow main">
+          <div class="copy">
+            <h3>Main n8n Flow</h3>
+            <p>The orchestration layer manages ingestion, parsing, routing, and conditional logic for invoice handling.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="screenshots/n8n-ui.jpg" alt="n8n builder interface">
+          <div class="copy">
+            <h3>Builder Interface</h3>
+            <p>The implementation is presented as a practical workflow system, not just a diagram or idea.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>What This Project Demonstrates</h2>
+      <ul class="list">
+        <li>Real workflow orchestration across multiple SaaS tools</li>
+        <li>AI-assisted document understanding inside business automation</li>
+        <li>Human-in-the-loop design for review and exception handling</li>
+        <li>Practical system thinking for bookkeeping and operations support</li>
+        <li>Portfolio-ready evidence through screenshots, demo video, and walkthrough</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
